@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------- */
+/* custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-gradient-main: linear-gradient(
+    30deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 22, 121, 1) 35%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+/* ------------------- */
+/* main styling        */
+/* ------------------- */
+
+/* general styling */
+
+body {
+  height: 100vh;
+  font-family: poppins;
+  background: var(--clr-gradient-main);
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  font: inherit;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: var(--clr-gradient-main);
+  color: white;
+  border: none;
+}
+
+span {
+  font-size: 0.75rem;
+  color: rgb(85, 85, 85);
+}
+
+input,
+textarea,
+select {
+  border: none;
+  border-bottom: 1px darkgrey solid;
+  padding-block: 1rem;
+}
+
+.stack * {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.stack > * + * {
+  margin-block: 2em;
+}
+
+/* ------------------- */
+/* form styling        */
+/* ------------------- */
+
+.form__container {
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-inline: auto;
+  width: 600px;
+  padding: 0 5em 4em 5em;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  position: relative;
+}

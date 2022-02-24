@@ -5,9 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <title>Stylish Form DN</title>
   </head>
   <body>
+
+    <div class="form__container">
+      <h1>Say Hello!</h1>
+      
+      <form class="stack">
+
+          <div class="form__input">
+            <label for="name" class="label-name">
+              <span class="content-name">Your Name</span>
+            </label>
+            <input type="text" name="name" required>
+          </div>
+
+          <div class="form__input">
+            <label for="email" class="label-name">
+              <span class="content-name">Your Email</span>
+            </label>
+            <input type="text" name="email" required>
+          </div>
+
+          <div class="form__input">
+            <label for="services" class="label-name">
+              <span class="content-name">Services Needed</span>
+            </label>
+            <select name="services" id="services">
+              <option value="HTML">HTML</option>
+              <option value="CSS">CSS</option>
+              <option value="Javascript">Javascript</option>
+              <option value="React">React</option>
+            </select>
+          </div>
+
+          <div class="form__input">
+            <label for="budget" class="label-name">
+              <span class="content-name">Budget</span>
+            </label>
+            <select name="budget" id="budget">
+              <option value="£100">£100</option>
+              <option value="£500">£500</option>
+              <option value="£1000">£1000</option>
+            </select>
+          </div>
+
+          <div class="form__input">
+            <label for="message" class="label-name">
+              <span class="content-name">Message</span>
+            </label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+
+
+
+
+
+
+          <button type="submit">Submit</button>
+        </form>
+
+      
+      
+
+
+
+
+
+
+    </div>
 
   </body>
 </html>
