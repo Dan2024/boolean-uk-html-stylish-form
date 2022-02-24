@@ -18,7 +18,7 @@
             <label for="name" class="label-name">
               <span class="content-name">Your Name</span>
             </label>
-            <input type="text" name="name" required>
+            <input minlength="3" type="text" name="name" required>
           </div>
 
           <div class="form__input">
@@ -32,7 +32,8 @@
             <label for="services" class="label-name">
               <span class="content-name">Services Needed</span>
             </label>
-            <select name="services" id="services">
+            <select name="services" id="services" required>
+              <option value="">Choose service</option>
               <option value="HTML">HTML</option>
               <option value="CSS">CSS</option>
               <option value="Javascript">Javascript</option>
@@ -44,7 +45,8 @@
             <label for="budget" class="label-name">
               <span class="content-name">Budget</span>
             </label>
-            <select name="budget" id="budget">
+            <select name="budget" id="budget" required>
+              <option value="">Select budget</option>
               <option value="£100">£100</option>
               <option value="£500">£500</option>
               <option value="£1000">£1000</option>
@@ -55,7 +57,7 @@
             <label for="message" class="label-name">
               <span class="content-name">Message</span>
             </label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
           </div>
 
 
